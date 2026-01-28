@@ -1,4 +1,7 @@
 stable-baselines3==2.0.0a5
-swig
-gymnasium[box2d]
 huggingface_sb3
+
+# Avoid gymnasium[box2d] extras: can trigger source builds / metadata failures in notebooks.
+gymnasium==0.28.1
+box2d-py==2.3.5
+pygame>=2.5.2
